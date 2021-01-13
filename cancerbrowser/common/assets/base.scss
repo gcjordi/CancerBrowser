@@ -1,0 +1,139 @@
+// Import our custom bootstrap version
+@import "variables";
+@import "bootstrap_custom";
+
+
+// Generic site-wide css here
+body {
+  font-weight: 300;
+}
+
+h1 {
+  margin-bottom: 22px;
+}
+
+.main-footer {
+  border-top: 1px solid #e8e8e8;
+  text-align: center;
+  color: #888;
+  padding: 15px;
+  font-style: italic;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.clickable-icon {
+  cursor: pointer;
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+
+.table {
+  > thead > tr > th {
+    font-weight: 400;
+    border-bottom: 1px solid #aaa;
+  }
+
+  > tbody > tr:first-child > td {
+    border-top: 0;
+  }
+}
+
+.small-label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #888;
+  margin-bottom: 6px;
+}
+
+
+// override btn styling
+.btn-default {
+  border-bottom: 3px solid $btn-default-border;
+
+  &.active {
+    border-bottom: 3px solid darken($btn-default-bg, 10%);
+  }
+}
+.btn-primary {
+  border-bottom: 3px solid $btn-primary-border;
+
+  &.active {
+    border-bottom: 3px solid darken($btn-primary-bg, 10%);
+  }
+}
+
+// override bootstrap dropdown menu font wieght
+.dropdown-menu > li > a {
+  font-weight: 300;
+}
+
+
+.spaced-right {
+  margin-right: 10px;
+}
+
+.chart-controls {
+  .form-group {
+    width: 200px;
+    float: left;
+    margin-right: 20px;
+  }
+}
+
+
+.view-heading {
+  margin-bottom: 10px;
+
+  h3 {
+    margin-bottom: 2px;
+  }
+
+  .selected-params {
+    color: #888;
+
+    li:before {
+      content: '•';
+      margin-right: 8px;
+      color: #ccc;
+    }
+
+    li:first-child:before {
+      content: '';
+      display: none;
+    }
+  }
+}
+
+.color-icon {
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  border-radius: 100%;
+  margin-right: 0.3em;
+  margin-bottom: 1px;
+  background-color: #eee;
+}
+
+.bg-nm {
+  background-color: $nm-color;
+}
+.bg-her2amp {
+  background-color: $her2amp-color;
+}
+.bg-tnbc {
+  background-color: $tnbc-color;
+}
+.bg-hrplus {
+  background-color: $hrplus-color;
+}
+
+.constrained-width-text {
+  max-width: 800px;
+}

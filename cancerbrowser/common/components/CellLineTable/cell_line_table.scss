@@ -1,0 +1,29 @@
+$cell-alternate-fill: #f4f4f4;
+$cell-muted-color: #bbb;
+
+.CellLineTable {
+  .table > tbody > tr > td {
+    vertical-align: middle;
+  }
+
+  .mutation-col,
+  .dataset-col {
+    text-align: center;
+  }
+
+  .mutation-mut, .has-dataset {
+    background-color: $cell-alternate-fill;
+  }
+
+  .no-data, .mutation-no-data {
+    color: $cell-muted-color;
+  }
+
+  .label-list {
+    margin: 0;
+  }
+
+  .cell-line-td {
+    white-space: nowrap;
+  }
+}
